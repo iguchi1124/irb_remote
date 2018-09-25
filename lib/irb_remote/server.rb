@@ -10,7 +10,7 @@ module IRBRemote
     end
 
     def start
-      IRB.setup(@binding.eval('__FILE__'), argv: [])
+      IRB.setup(@binding.eval('__FILE__'))
       DRb.start_service("druby://#{IRBRemote.config.host}:#{IRBRemote.config.port}", self, safe_level: 1)
       DRb.thread.join
     end
