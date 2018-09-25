@@ -12,7 +12,7 @@ module IRBRemote
     map %w[-v --version] => :version
     desc "-v or --version", "Print the version"
     def version
-      puts IRBRemote::Version
+      puts IRBRemote::VERSION
     end
   end
 end
