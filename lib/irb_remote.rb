@@ -1,3 +1,4 @@
+require "irb_remote/cli"
 require "irb_remote/client"
 require "irb_remote/configuration"
 require "irb_remote/core_ext/binding"
